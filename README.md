@@ -79,7 +79,6 @@ devops-automation-collection/
 ```
 
 
-## Technologies
 ## Technology Stack
 
 | Category | Technologies |
