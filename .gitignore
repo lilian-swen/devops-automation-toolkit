@@ -1,0 +1,28 @@
+# --- System Files ---
+.DS_Store
+Thumbs.db
+
+# --- Logs & Temp Files ---
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+
+# --- Credentials & Secrets ---
+# Never commit files containing API keys, passwords, or tokens
+.env
+*.pem
+*.key
+*.secret
+
+# --- Editor/IDE Files ---
+.vscode/
+.idea/
+.project
+.settings/
+
+# --- Build & Runtime Artifacts ---
+# Add any output directories if your scripts generate files
+/dist/
+/out/

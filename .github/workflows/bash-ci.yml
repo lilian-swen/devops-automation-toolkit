@@ -1,0 +1,36 @@
+name: Bash CI
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+  pull_request:
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y shellcheck
+          sudo snap install shfmt
+
+      - name: Run ShellCheck
+        run: |
+          find scripts -type f -name "*.sh" -exec shellcheck {} \;
+
+      - name: Check Formatting
+        run: |
+          shfmt -d scripts
+
+      - name: Run Tests
+        run: |
+          chmod +x tests/*.sh
+          ./tests/run-tests.sh
