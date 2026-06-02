@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # This script creates an account on the local system.
-# You will be prompted for the account name and password.
 
 # Ask for the user name.
 read -p 'Enter the username to create: ' USER_NAME
