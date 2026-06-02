@@ -44,10 +44,25 @@ if [[ "${?}" -ne 0 ]]; then
     exit 1
 fi
 
+
 # Force password change on first login
 passwd -e "${USER_NAME}" &>/dev/null
 
-echo "User ${USER_NAME} successfully created."
-echo "Temporary password: ${PASSWORD}"
-echo "User will be forced to change this password on first login."
+
+# Display output block for the Help Desk
+cat <<EOF
+------------------------------------------------------------
+ACCOUNT PROVISIONING SUCCESSFUL
+------------------------------------------------------------
+System:        ${HOSTNAME}
+User:          ${USER_NAME}
+Temp Password: ${PASSWORD}
+
+IMPORTANT: 
+The user will be required to change this password upon 
+their first successful login. Please forward these 
+credentials to the user securely.
+------------------------------------------------------------
+EOF
+
 exit 0
