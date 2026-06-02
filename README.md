@@ -80,36 +80,15 @@ devops-automation-collection/
 
 
 ## Technologies
-### Operating Systems
-- Linux
-- Fedora 43
-- Amazon Linux
+## Technology Stack
 
-###  Scripting
-- Bash
-- Shell Scripting
-
-### DevOps & Infrastructure
-- Docker
-- Terraform
-- GitHub Actions
-- Jenkins
-- AWS
-
-### Monitoring
-- Cron
-- Systemd
-- Prometheus (future)
-- Grafana (future)
-
-### Utilities
-- awk
-- sed
-- grep
-- find
-- tar
-- curl
-- jq
+| Category | Technologies |
+|----------|-------------|
+| **Operating Systems** | Linux, Fedora 43, Amazon Linux |
+| **Scripting** | Bash, Shell Scripting |
+| **DevOps & Infrastructure** | Docker, Terraform, GitHub Actions, Jenkins, AWS |
+| **Monitoring** | Cron, Systemd, Prometheus *(future)*, Grafana *(future)* |
+| **Utilities** | awk, sed, grep, find, tar, curl, jq |
 
 ## Getting Started
 
