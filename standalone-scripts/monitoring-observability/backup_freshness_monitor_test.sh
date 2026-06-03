@@ -12,7 +12,7 @@
 #     - Missing directory
 #
 # Usage:
-#   ./test_backup_monitor.sh
+#   ./backup_freshness_monitor_test.sh
 ###############################################################################
 
 SCRIPT="./backup_freshness_monitor.sh"

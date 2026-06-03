@@ -55,27 +55,28 @@ Inspired by Site Reliability Engineering (SRE) and DevOps best practices:
 
 ## Repository Structure
 ```
-
-devops-automation-collection/
-│
-├── scripts/
-│   ├── monitoring/
-│   ├── maintenance/
-│   ├── backup/
-│   ├── security/
-│   ├── deployment/
-│   └── cloud/
-│
-├── shared/
-│   ├── logging.sh
-│   ├── notifications.sh
-│   └── common.sh
-│
-├── examples/
-│
-├── docs/
-│
-└── README.md
+devops-automation-toolkit
+├── configs
+│   └── health-check.conf
+├── docs
+├── examples
+├── LICENSE
+├── README.md
+├── shared
+├── standalone-scripts
+│   ├── account-management
+│   │   ├── create_user_readme.md
+│   │   └── manage_users_readme.md
+│   ├── aws-infrastructure
+│   ├── backup-recovery
+│   ├── cicd-deployment
+│   ├── log-management
+│   ├── maintenance
+│   ├── monitoring-observability
+│   │   └── backup_freshness_monitor-readme.md
+│   └── security-automation
+│       └── ssl_tls_cert_check_readme.md
+└── tests
 ```
 
 

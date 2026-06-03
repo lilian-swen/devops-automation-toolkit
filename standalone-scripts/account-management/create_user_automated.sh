@@ -1,9 +1,9 @@
 #!/bin/bash
 #
-# Name: create-user-automated.sh
+# Name: create_user_automated.sh
 # Description: Creates a new user on the local system non-interactively with a generated password.
-# Usage: ./create-user-automated.sh <username> <full_name>
-# Example call: ./create-user-automated.sh dak "Dakota"
+# Usage: ./create_user_automated.sh <username> <full_name>
+# Example call: ./create_user_automated.sh dak "Dakota"
 
 
 # Ensure the script is run as root
